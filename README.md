@@ -6,3 +6,9 @@ The given problem is solved using two methods: self implementation of Naive Baye
 LINK FOR DATASET USED: http://archive.ics.uci.edu/ml/datasets/Twenty+Newsgroups
 
 
+OVERVIEW OF STEPS DONE:
+1. The files are first opened and are cleared of stop words,digits,punctuation marks adn the headers.
+2. A dictionary is created having keys as the words predsnt in the files and their frequencies as their corresponding values.
+3. The dictionary is then sorted in descending fashion and top k words(k can be any number,4000 here) are chosen as our feature values for training and testing dataframes created.
+4. Next, the two main functions of an algorithm i.e. fit and predict are made to implement Naive Bayes.
+5. The score finally calculates the accuracy which is 75-80% in case of 20 newsgroups while 65-70% in case of mini newsgroups.
